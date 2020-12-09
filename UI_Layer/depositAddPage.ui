@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>depositAdd</class>
+ <widget class="QDialog" name="depositAdd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(49, 49, 49);</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>641</width>
+     <height>751</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(200, 200, 200);</string>
+   </property>
+   <property name="title">
+    <string>Emanet Kitap Ekle</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>611</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="depositBookNameEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Kitap Adı:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Ödünç Alanın Adı:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Kaç Gün Ödünç Verilecek:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="depositUserNameEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Ödünç Alınan Tarih:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="depositBookSearchButton">
+       <property name="text">
+        <string>Ara</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QTableWidget" name="depositBookTableWidget">
+       <property name="styleSheet">
+        <string notr="true">
+background-color: rgb(225, 225, 225);
+color: rgb(103, 103, 103);</string>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="columnCount">
+        <number>6</number>
+       </property>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Kitap Adı</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Kitap Türü</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Yazar</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Yayın Evi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Geliş Tarihi</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>Palyaço Bobi</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>Çocuk Klasikleri</string>
+        </property>
+       </item>
+       <item row="0" column="3">
+        <property name="text">
+         <string>Efe Aydal</string>
+        </property>
+       </item>
+       <item row="0" column="4">
+        <property name="text">
+         <string>Cezve Çocuk</string>
+        </property>
+       </item>
+       <item row="0" column="5">
+        <property name="text">
+         <string>6/12/2019</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>Interstellar</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>Bilim Kurgu</string>
+        </property>
+       </item>
+       <item row="1" column="3">
+        <property name="text">
+         <string>Jeff J. Gordon</string>
+        </property>
+       </item>
+       <item row="1" column="4">
+        <property name="text">
+         <string>Pegasus Yayınları</string>
+        </property>
+       </item>
+       <item row="1" column="5">
+        <property name="text">
+         <string>25/3/2017</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>Acı Çikolata</string>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="text">
+         <string>Korku</string>
+        </property>
+       </item>
+       <item row="2" column="3">
+        <property name="text">
+         <string>Kerim Akdul</string>
+        </property>
+       </item>
+       <item row="2" column="4">
+        <property name="text">
+         <string>Yaman Yayınevi</string>
+        </property>
+       </item>
+       <item row="2" column="5">
+        <property name="text">
+         <string>14/7/2018</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="3">
+      <widget class="QTableWidget" name="userTableWidget">
+       <property name="styleSheet">
+        <string notr="true">
+background-color: rgb(215, 215, 215);
+color: rgb(103, 103, 103);</string>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="columnCount">
+        <number>3</number>
+       </property>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Ad-Soyad</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Telefon</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>BARANALP ASLANDOĞAN</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>+90 543 223 1234</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>TURAN KÜÇÜKAĞDAŞ</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>+90 382 113 9283</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>RAMAZAN DAVULBAŞ</string>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="text">
+         <string>+90 372 958 9128</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" colspan="2">
+      <widget class="QComboBox" name="depositDatePickBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Seçiniz...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>15 Gün</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>30 Gün</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>60 Gün</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="depositUserSearchButton">
+       <property name="text">
+        <string>Ara</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="depositAddButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>720</y>
+      <width>122</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(152, 152, 152);
+color: rgb(53, 53, 53);</string>
+    </property>
+    <property name="text">
+     <string>Emanet Ekle</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

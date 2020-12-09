@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bookDialog</class>
+ <widget class="QDialog" name="bookDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1137</width>
+    <height>389</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(49, 49, 49);</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1121</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(200, 200, 200);</string>
+   </property>
+   <property name="title">
+    <string>Kitap İşlemleri</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>471</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="bookNameEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QComboBox" name="bookTypeBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(50, 50, 50);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Seçiniz...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Korku</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Aksiyon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bilim Kurgu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eğitim</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Çocuk Klasikleri</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fantastik</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kişisel Gelişim</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Din Kültürü</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Kitap Türü:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Geliş Tarihi:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QLineEdit" name="bookAuthorNameEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Yazar:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Kitap Adı:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Yayın Evi:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1" colspan="2">
+      <widget class="QDateEdit" name="bookArrivalDateEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(50, 50, 50);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="bookPublisherEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Kitap ID:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="bookIDLine">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(215, 215, 215);
+color: rgb(92, 92, 92);</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="bookTableWidget">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>621</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(225, 225, 225);
+color: rgb(103, 103, 103);</string>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>.</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>.</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>.</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Kitap Adı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Kitap Türü</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Yazar</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Yayın Evi</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Geliş Tarihi</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>Palyaço Bobi</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>Çocuk Klasikleri</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>Efe Aydal</string>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>Cezve Çocuk</string>
+     </property>
+    </item>
+    <item row="0" column="5">
+     <property name="text">
+      <string>6/12/2019</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>Interstellar</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>Bilim Kurgu</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>Jeff J. Gordon</string>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>Pegasus Yayınları</string>
+     </property>
+    </item>
+    <item row="1" column="5">
+     <property name="text">
+      <string>25/3/2017</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>Acı Çikolata</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>Korku</string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>Kerim Akdul</string>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string>Yaman Yayınevi</string>
+     </property>
+    </item>
+    <item row="2" column="5">
+     <property name="text">
+      <string>14/7/2018</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="bookAddButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(152, 152, 152);
+color: rgb(53, 53, 53);</string>
+    </property>
+    <property name="text">
+     <string>Ekle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bookUpdateButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>310</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(152, 152, 152);
+color: rgb(53, 53, 53);</string>
+    </property>
+    <property name="text">
+     <string>Güncelle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bookDeleteButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>310</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(152, 152, 152);
+color: rgb(53, 53, 53);</string>
+    </property>
+    <property name="text">
+     <string>Sil</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bookSearchButton">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>20</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(152, 152, 152);
+color: rgb(53, 53, 53);</string>
+    </property>
+    <property name="text">
+     <string>Ara</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>20</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aranacak Kitap İsmi:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bookSearchEdit">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>20</y>
+      <width>291</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(42, 42, 42);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bookListUpdateButton">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>20</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(152, 152, 152);
+color: rgb(53, 53, 53);</string>
+    </property>
+    <property name="text">
+     <string>Liste Yenile</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
